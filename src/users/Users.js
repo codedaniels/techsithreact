@@ -12,7 +12,13 @@ class Users extends Component {
     };
 
     makeMeYounger = () => {
-        this.state.users[0].age -=10;
+        this.setState({
+            users: [
+                {name:"John", age:10},
+                {name:"Jacob", age:20},
+                {name:"Jingleheimerschmit", age:30}
+            ]    
+        })
 
     }
 
@@ -23,8 +29,8 @@ class Users extends Component {
                 <br/>
                 <h1>{this.state.title}</h1>
                 <User age={this.state.users[0].age}>{this.state.users[0].name}</User>
-                <User age="30">Jacob</User>
-                <User age="40">Jingleheimerschmit</User>
+                <User age={this.state.users[1].age}>{this.state.users[1].name}</User>
+                <User age={this.state.users[2].age}>{this.state.users[2].name}</User>
             </div>
         )
     }
