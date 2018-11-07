@@ -9,12 +9,17 @@ class Users extends Component {
             {name:"Jingleheimerschmit", age:40},
         ],
         title:"Users List"
+    };
+
+    makeMeYounger = () => {
+        this.state.users[0].age -=10;
+
     }
 
     render(){
         return (
             <div>
-                <button>Make Us 10 Years Younger</button>
+                <button onClick={this.makeMeYounger}>Make Us 10 Years Younger</button>
                 <br/>
                 <h1>{this.state.title}</h1>
                 <User age={this.state.users[0].age}>{this.state.users[0].name}</User>
