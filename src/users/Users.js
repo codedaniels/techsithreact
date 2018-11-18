@@ -10,6 +10,7 @@ class Users extends Component {
             {name:"Daniel", age:38},
             {name:"Eunice", age:36},
             {name:"Emma", age:4},
+            {name:"Liam", age: 1}
         ],
         title:"Users List"
     };
