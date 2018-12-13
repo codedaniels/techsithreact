@@ -4,12 +4,14 @@ import User from './User';
 class Users extends Component {
     state = {
         users: [
-            {name:"John", age:20},
-            {name:"Jacob", age:30},
-            {name:"Jingleheimerschmit", age:40},
+            {name:"Cindy", age:68},
+            {name:"Michael", age:65},
+            {name:"Jane", age:65},
             {name:"Daniel", age:38},
             {name:"Eunice", age:36},
             {name:"Emma", age:4},
+            {name:"Liam", age: 1},
+            {name:"Sarah", age: 27}
         ],
         title:"Users List"
     };
